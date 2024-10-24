@@ -5,15 +5,17 @@ const productRoute=require('./product/route.js');
 const cors=require('cors');
 const app = express();
 
+app.use(cors({
+  origin:'http://localhost:3000'
+}));
+
+
 //middle ware
 app.use(express.json())
 
 //route
 app.use('/api/products',productRoute);
 
-app.use(cors({
-  origin:'http://localhost:3000'
-}));
 
 
 mongoose.connect('mongodb+srv://abinaya:123@ecommerce.gunty.mongodb.net/')
