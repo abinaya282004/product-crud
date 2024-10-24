@@ -16,10 +16,6 @@ app.use(cors({
 }));
 
 
-app.get('/', (req, res) => {
-    res.send("Hello from node API Request Server");
-});
-
 mongoose.connect('mongodb+srv://abinaya:123@ecommerce.gunty.mongodb.net/')
   .then(() =>{
     console.log('Connected to Database');
