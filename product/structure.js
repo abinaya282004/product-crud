@@ -45,7 +45,7 @@ const ProductSchema=mongoose.Schema(
             required:true
         },
         price:{
-            type:Number,
+            type:String,
             required:true,
             default:0
         },
@@ -66,7 +66,7 @@ const ProductSchema=mongoose.Schema(
             type:[String],
             required:true
         },
-        RAM:{
+        storage:{
             type:[String],
             required:true
         },
