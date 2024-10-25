@@ -28,6 +28,10 @@ const ProductSchema=mongoose.Schema(
             type:String,
             required:true
         },
+        brand:{
+            type:String,
+            required:FontFaceSetLoadEvent
+        },
         name:{
             type:String,
             required:true   
