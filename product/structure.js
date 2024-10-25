@@ -71,7 +71,7 @@ const ProductSchema=mongoose.Schema(
             required:true
         },
         highlights:{
-            type:String,
+            type:[String],
             required:false
         },
         specification:{
